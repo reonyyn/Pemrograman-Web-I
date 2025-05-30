@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .corner-borders div {z-index: 1; pointer-events: none; background-color: transparent; border-color: black; border-style: solid; position: fixed; width: 100px; height: 100px}
+        .top-right {border-width: 15px 15px 0 0; right: 0; top: 0;}
+        .top-left {border-width: 15px 0 0 15px; top: 0; left: 0;}
+        .bottom-left {border-width: 0 0 15px 15px; bottom: 0; left: 0;}
+        .bottom-right {border-width: 0 15px 15px 0; bottom: 0; right: 0;}
+        .fontstyle1 {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        .height1 {height: 15vh;}
+        .space1 {letter-spacing: 6px;}
+        .space2 {letter-spacing: 2px;}
+        .img-container img {width: 80%; height: 270px;}
+        .footer {height: 500px;}
+    </style>
+    <title>Latihan Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>  
+    <section class="corner-borders">
+        <div class="top-right"></div>
+        <div class="top-left"></div>
+        <div class="bottom-right"></div>
+        <div class="bottom-left"></div>
+    </section>
+    <nav class="navbar navbar-expand bg-body-tertiary fontstyle1">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-4 ms-5 mt-4"><h1 class="fw-bold">JPhotography</h1></span>
+            <div id="navmenu">
+                <ul class="navbar-nav me-5">
+                    <li class="nav-item"><a href="#" class="nav-link border border-dark btn active px-4" aria-current="page">HOME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">ABOUT ME</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+    <div class="row height1">
+        <div class="col d-flex flex-column justify-content-center align-items-center fontstyle1">
+            <h1 class="fw-bold">Hi. Hello.. I am Raraa...!</h1>
+            <h2 class="fw-bold">I Travel Around The World To Get The Best Photos.!</h2>
+            <p class="text-muted space1">AWARD WINNING PHOTOGRAPHER / CINEMATOGRAPHER / WRITER</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex flex-column justify-content-center align-items-center fontstyle1">
+            <p class="d-inline-flex gap-3">
+                <button type="button" class="btn active rounded-pill px-4 fw-bold">All</button>
+                <button type="button" class="btn px-4 rounded-pill fw-bold">Landscape</button>
+                <button type="button" class="btn px-4 rounded-pill fw-bold">Portrait</button>
+                <button type="button" class="btn px-4 rounded-pill fw-bold">Product</button>
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 img-container"><img src="SHOKICHI_1.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="SHOKICHI_2.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="SHOKICHI_3.jpg"  class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="SHOKICHI_4.jpg"  class="img-fluid"></div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-3 img-container"><img src="OMI_1.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="OMI_2.jpg"  class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="OMI_3.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="OMI_4.jpg"  class="img-fluid"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 img-container"><img src="RYUJESS_1.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="RYUJESS_2.jpeg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="RYUJESS_3.jpg"  class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="RYUJESS_4.jpg"  class="img-fluid"></div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-3 img-container"><img src="CYO_kocakk_1.jpeg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="CYO_kocakk_2.jpeg " class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="MACKENYUU_1.jpg" class="img-fluid"></div>
+            <div class="col-md-3 img-container"><img src="MACKENYUU_2.jpg" class="img-fluid"></div>
+        </div>    
+    </div>
+    <div class="row footer">
+        <div class="col d-flex flex-column align-items-center justify-content-center fontstyle1">
+            <h1 class="fw-bold">JPhotography</h1>
+            <p class="space2 text-muted">&copy;Copyrights 2025. All Rights Reserved</p>
+            <div class="h2 py-2 text-muted">
+                <i class="fa-brands fa-dribbble px-5"></i>
+                <i class="fa-brands fa-behance pe-5"></i>
+                <i class="fa-brands fa-instagram pe-5"></i>
+                <i class="fa-brands fa-500px pe-5 "></i>
+                <i class="fa-brands fa-flickr pe-5 "></i>
+                <i class="fa-brands fa-square-facebook pe-5"></i>
+                <i class="fa-brands fa-x-twitter pe-5"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
